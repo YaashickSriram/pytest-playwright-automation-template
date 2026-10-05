@@ -1,0 +1,15 @@
+# Core testing framework
+playwright==1.58.0
+pytest==8.2.0
+pytest-playwright==0.5.0
+pytest-xdist==3.5.0
+
+# Reporting
+allure-pytest==2.13.5
+
+# Config and environment management
+PyYAML==6.0.1
+python-dotenv==1.0.1
+
+# HTTP client for API tests
+requests==2.32.3

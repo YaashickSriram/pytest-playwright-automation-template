@@ -1,0 +1,38 @@
+# ====================================================================
+# Dev Environment Configuration
+# ====================================================================
+# ${VARIABLE} placeholders are resolved from .env at runtime
+# ====================================================================
+
+base_url: "${APP_BASE_URL}"
+timeout_ms: 10000
+retry_count: 1
+headless: true
+browser: "msedge"
+
+# ──────────────────────────────────────────────────────────────────────
+# Application Users (Sauce Demo public test accounts)
+# ──────────────────────────────────────────────────────────────────────
+
+users:
+  standard:
+    username: "${APP_STANDARD_USER}"
+    password: "${APP_STANDARD_PASS}"
+  locked:
+    username: "${APP_LOCKED_USER}"
+    password: "${APP_LOCKED_PASS}"
+  problem:
+    username: "${APP_PROBLEM_USER}"
+    password: "${APP_PROBLEM_PASS}"
+  performance:
+    username: "${APP_PERF_USER}"
+    password: "${APP_PERF_PASS}"
+
+# ──────────────────────────────────────────────────────────────────────
+# API Configuration (ReqRes.in public API)
+# ──────────────────────────────────────────────────────────────────────
+
+api:
+  base_url: "${API_BASE_URL}"
+  api_key: "${API_KEY}"
+  timeout_seconds: 10

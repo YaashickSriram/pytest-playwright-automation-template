@@ -1,0 +1,31 @@
+# ====================================================================
+# UAT Environment Configuration
+# ====================================================================
+# This file demonstrates environment switching.
+# Change --env=uat to use this instead of dev.yaml
+# ====================================================================
+
+base_url: "${APP_BASE_URL}"
+timeout_ms: 15000
+retry_count: 2
+headless: true
+browser: "msedge"
+
+users:
+  standard:
+    username: "${APP_STANDARD_USER}"
+    password: "${APP_STANDARD_PASS}"
+  locked:
+    username: "${APP_LOCKED_USER}"
+    password: "${APP_LOCKED_PASS}"
+  problem:
+    username: "${APP_PROBLEM_USER}"
+    password: "${APP_PROBLEM_PASS}"
+  performance:
+    username: "${APP_PERF_USER}"
+    password: "${APP_PERF_PASS}"
+
+api:
+  base_url: "${API_BASE_URL}"
+  api_key: "${API_KEY}"
+  timeout_seconds: 15

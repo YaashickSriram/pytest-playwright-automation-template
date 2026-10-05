@@ -1,0 +1,40 @@
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Environment secrets — NEVER commit
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Testing + coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Generated reports — runtime only
+reports/allure-results/
+reports/allure-report/
+reports/screenshots/
+reports/execution.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Playwright
+test-results/
+playwright-report/
